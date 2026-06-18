@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="">
+  <defs>
+    <linearGradient id="hb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1638"/><stop offset="55%" stop-color="#14275f"/><stop offset="1" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="hbar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#5fd0f7"/><stop offset="1" stop-color="#a5f3fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#hb)"/>
+  <g fill="#ffffff" opacity="0.05">
+    <circle cx="1300" cy="180" r="360"/><circle cx="220" cy="820" r="260"/>
+  </g>
+  <!-- faint city skyline -->
+  <g fill="#ffffff" opacity="0.06">
+    <rect x="980"  y="540" width="70" height="360"/>
+    <rect x="1070" y="470" width="70" height="430"/>
+    <rect x="1160" y="560" width="70" height="340"/>
+    <rect x="1250" y="430" width="70" height="470"/>
+    <rect x="1340" y="520" width="70" height="380"/>
+    <rect x="1430" y="470" width="70" height="430"/>
+  </g>
+  <!-- rising bars + arrow -->
+  <g opacity="0.16">
+    <rect x="1000" y="560" width="80" height="200" rx="8" fill="#ffffff"/>
+    <rect x="1110" y="490" width="80" height="270" rx="8" fill="#ffffff"/>
+    <rect x="1220" y="410" width="80" height="350" rx="8" fill="url(#hbar)"/>
+    <rect x="1330" y="320" width="80" height="440" rx="8" fill="url(#hbar)"/>
+  </g>
+  <path d="M1000 600 L1150 500 L1260 470 L1390 320" fill="none" stroke="#a5f3fc" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+</svg>
