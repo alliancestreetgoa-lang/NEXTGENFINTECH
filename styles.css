@@ -140,13 +140,25 @@ img, svg { max-width: 100%; height: auto; display: block; }
 .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(16px, 2.2vw, 22px); }
 .card {
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 28px 24px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s;
+  overflow: hidden; display: flex; flex-direction: column;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s;
 }
 .card:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: transparent; }
+.card-media { margin: 0; position: relative; aspect-ratio: 16 / 10; background: var(--bg-alt); overflow: hidden; }
+.card-img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform .4s ease;
+}
+.card:hover .card-img { transform: scale(1.06); }
+.card-media::after { /* subtle gradient for legibility against any photo */
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(15,31,75,.18));
+}
+.card-body { padding: 22px 22px 26px; display: flex; flex-direction: column; }
 .card-icon {
-  width: 52px; height: 52px; display: grid; place-items: center; font-size: 1.5rem;
-  border-radius: 14px; margin-bottom: 16px;
-  background: linear-gradient(135deg, rgba(37,99,235,.12), rgba(56,189,248,.18));
+  width: 48px; height: 48px; display: grid; place-items: center; font-size: 1.4rem;
+  border-radius: 14px; margin: -44px 0 14px; position: relative; z-index: 1;
+  background: #fff; box-shadow: var(--shadow-sm); border: 1px solid var(--line);
 }
 .card h3 { font-size: 1.06rem; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
 .card p { font-size: .94rem; color: var(--muted); }

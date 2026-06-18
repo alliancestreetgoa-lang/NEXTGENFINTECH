@@ -2,6 +2,21 @@
 (function () {
   'use strict';
 
+  // Card images: swap to a branded local fallback if the photo fails to load
+  // (handled here, not via inline onerror, to stay within the strict CSP).
+  document.querySelectorAll('img[data-fallback]').forEach(function (img) {
+    img.addEventListener('error', function handle() {
+      img.removeEventListener('error', handle);
+      img.src = img.getAttribute('data-fallback');
+      img.classList.add('is-fallback');
+    });
+    // If it already errored before this script ran, trigger the swap now.
+    if (img.complete && img.naturalWidth === 0) {
+      img.src = img.getAttribute('data-fallback');
+      img.classList.add('is-fallback');
+    }
+  });
+
   // Mobile nav toggle
   var toggle = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
