@@ -139,6 +139,20 @@ img, svg { max-width: 100%; height: auto; display: block; }
 /* ===== Sections ===== */
 .section { padding: clamp(56px, 9vw, 88px) 0; }
 .section-alt { background: var(--bg-alt); }
+
+/* Decorative section backgrounds (generated graphics) */
+.has-bg { position: relative; isolation: isolate; overflow: hidden; }
+.has-bg > .container { position: relative; z-index: 2; }
+.section-bg-img {
+  position: absolute; inset: 0; z-index: 0;
+  width: 100%; height: 100%; object-fit: cover; object-position: center;
+  pointer-events: none; user-select: none;
+}
+/* Dark sections get a readability tint over the photo */
+.has-bg-dark::after {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(150deg, rgba(7,15,36,.72), rgba(22,41,94,.60));
+}
 .section-head { max-width: 640px; margin: 0 auto clamp(36px, 6vw, 54px); text-align: center; }
 .section-head h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 700; color: var(--navy); }
 .section-lead { margin-top: 14px; color: var(--muted); font-size: clamp(1rem, 2.2vw, 1.05rem); }
