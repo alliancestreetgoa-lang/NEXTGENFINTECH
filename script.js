@@ -2,6 +2,22 @@
 (function () {
   'use strict';
 
+  // Hero video: force autoplay on mobile browsers that need an explicit call
+  (function heroVideo() {
+    var v = document.querySelector('.hero-video');
+    if (!v) return;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { v.pause(); return; }
+    v.muted = true; v.setAttribute('muted', '');
+    var play = function () { var pr = v.play(); if (pr && pr.catch) pr.catch(function () {}); };
+    play();
+    v.addEventListener('canplay', play, { once: true });
+    v.addEventListener('loadeddata', play, { once: true });
+    ['touchstart', 'click', 'scroll'].forEach(function (ev) {
+      window.addEventListener(ev, function once() { play(); window.removeEventListener(ev, once); }, { passive: true });
+    });
+  })();
+
   // Card images: swap to a branded local fallback if the photo fails to load
   // (handled here, not via inline onerror, to stay within the strict CSP).
   document.querySelectorAll('img[data-fallback]').forEach(function (img) {

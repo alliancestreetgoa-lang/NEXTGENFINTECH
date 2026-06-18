@@ -112,9 +112,8 @@ img, svg { max-width: 100%; height: auto; display: block; }
 .hero-bg {
   position: absolute; inset: 0; z-index: 1;
   background:
-    radial-gradient(1000px 520px at 82% -12%, rgba(56,189,248,.10), transparent 62%),
-    radial-gradient(760px 520px at 2% 112%, rgba(37,99,235,.14), transparent 58%),
-    linear-gradient(120deg, rgba(8,17,39,.62) 0%, rgba(15,33,80,.50) 52%, rgba(30,58,138,.40) 100%);
+    radial-gradient(1000px 520px at 82% -12%, rgba(56,189,248,.06), transparent 62%),
+    linear-gradient(125deg, rgba(8,17,39,.55) 0%, rgba(12,26,64,.40) 45%, rgba(30,58,138,.30) 100%);
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-video { display: none; } /* show the static gradient instead of motion */
