@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 190" role="img" aria-label="NextGen FinTech logo">
+  <defs>
+    <linearGradient id="ngBlue" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e3a8a"/>
+      <stop offset=".55" stop-color="#2f6fd6"/>
+      <stop offset="1" stop-color="#5fd0f7"/>
+    </linearGradient>
+    <linearGradient id="ngStone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6b7480"/>
+      <stop offset=".5" stop-color="#333b46"/>
+      <stop offset="1" stop-color="#1b2230"/>
+    </linearGradient>
+    <linearGradient id="ngArrow" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#3aa0e8"/>
+      <stop offset="1" stop-color="#7fe0ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ===== Monogram ===== -->
+  <g transform="translate(55 0)">
+    <rect x="24" y="30" width="15" height="62" rx="7" fill="url(#ngStone)"/>
+    <path d="M31 35 L83 90" fill="none" stroke="url(#ngBlue)" stroke-width="15" stroke-linecap="round"/>
+    <rect x="76" y="36" width="15" height="56" rx="7" fill="url(#ngBlue)"/>
+    <path d="M83.5 14 L100 40 L67 40 Z" fill="url(#ngArrow)"/>
+    <path d="M18 96 Q58 120 102 82" fill="none" stroke="url(#ngBlue)" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <!-- ===== Wordmark ===== -->
+  <g font-family="'Poppins','Segoe UI',sans-serif" font-weight="700" text-anchor="middle">
+    <text x="115" y="152" font-size="29" letter-spacing="-0.5">
+      <tspan fill="#243a73">Next</tspan><tspan fill="#3f6fd6">Gen</tspan>
+    </text>
+    <text x="115" y="180" font-size="29" letter-spacing="-0.5" fill="#243a73">FinTech</text>
+  </g>
+</svg>

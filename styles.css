@@ -62,6 +62,7 @@ img { max-width: 100%; }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .brand { display: flex; align-items: center; gap: 10px; }
 .brand-mark { display: inline-flex; }
+.brand-row { display: inline-flex; align-items: center; gap: 10px; }
 .brand-text { font-size: 1.25rem; font-weight: 600; color: var(--navy); }
 .brand-text strong { color: var(--blue); font-weight: 800; }
 .nav-links { list-style: none; display: flex; align-items: center; gap: 30px; }
