@@ -1,0 +1,14 @@
+{
+  "name": "NextGen FinTech",
+  "short_name": "NextGen FinTech",
+  "description": "Financial & business advisory — accounting, tax, GST, compliance, funding and consulting in Margao, South Goa.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f1f4b",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

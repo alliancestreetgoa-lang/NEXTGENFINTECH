@@ -3,20 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NextGen FinTech — Chartered Accountancy, taxation, compliance, and strategic business consulting in Margao, South Goa. Led by Aniruddha Roy (CA, ICWA, CS, CFA)." />
+  <title>NextGen FinTech | Financial &amp; Business Advisory · Margao, Goa</title>
+  <meta name="description" content="NextGen FinTech — Chartered Accountancy, taxation, GST, compliance, and strategic business consulting in Margao, South Goa. Led by Aniruddha Roy (CA, ICWA, CS, CFA)." />
   <meta name="keywords" content="Chartered Accountant Goa, GST Goa, Income Tax, MSME, FSSAI, Business Consulting Margao, Corporate Funding, NextGen FinTech" />
   <meta name="author" content="NextGen FinTech" />
-  <meta property="og:title" content="NextGen FinTech — Financial & Business Advisory" />
-  <meta property="og:description" content="Accounting, taxation, compliance & strategic consulting in South Goa." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f1f4b" />
+  <link rel="canonical" href="https://nextgenfintech.in/" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:site_name" content="NextGen FinTech" />
+  <meta property="og:title" content="NextGen FinTech — Financial &amp; Business Advisory" />
+  <meta property="og:description" content="Accounting, taxation, GST, compliance, funding & strategic consulting in South Goa." />
   <meta property="og:type" content="website" />
-  <title>NextGen FinTech | Financial & Business Advisory · Margao, Goa</title>
+  <meta property="og:url" content="https://nextgenfintech.in/" />
+  <meta property="og:image" content="https://nextgenfintech.in/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NextGen FinTech — Financial &amp; Business Advisory" />
+  <meta name="twitter:description" content="Accounting, taxation, GST, compliance, funding & strategic consulting in South Goa." />
+  <meta name="twitter:image" content="https://nextgenfintech.in/assets/og-image.png" />
+
+  <!-- Icons / PWA -->
+  <link rel="icon" type="image/svg+xml" href="logo-mark.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icon-180.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/svg+xml" href="logo-mark.svg" />
+
+  <!-- Structured data: Local business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "NextGen FinTech",
+    "image": "https://nextgenfintech.in/assets/og-image.png",
+    "url": "https://nextgenfintech.in/",
+    "telephone": "+91-91120-13981",
+    "email": "nextgenfintech2@gmail.com",
+    "priceRange": "$$",
+    "founder": {
+      "@type": "Person",
+      "name": "Aniruddha Roy",
+      "jobTitle": "CEO & Founder",
+      "hasCredential": ["B.Com", "CA", "ICWA", "CS", "CFA"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Margao",
+      "addressRegion": "Goa",
+      "addressCountry": "IN"
+    },
+    "areaServed": "IN",
+    "knowsAbout": [
+      "Financial & Management Accounting",
+      "Income Tax & GST Compliance",
+      "MSME & FSSAI Compliance",
+      "Corporate & Legal Compliance",
+      "Business Analysis & Margin Management",
+      "Business Growth & Management Consulting",
+      "Strategic Management Services",
+      "Corporate Banking & Funding"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
   <!-- ===== Header ===== -->
   <header class="site-header" id="top">
     <nav class="nav container">
@@ -37,6 +96,7 @@
   </header>
 
   <!-- ===== Hero ===== -->
+  <main id="main">
   <section class="hero">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-inner">
@@ -184,6 +244,9 @@
       <form class="contact-form" action="https://formsubmit.co/nextgenfintech2@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New enquiry from NextGen FinTech website" />
         <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <!-- Honeypot: bots fill this, humans never see it -->
+        <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <label>Name<input type="text" name="name" required placeholder="Your full name" /></label>
         <label>Email<input type="email" name="email" required placeholder="you@example.com" /></label>
         <label>Phone<input type="tel" name="phone" placeholder="+91 ..." /></label>
@@ -193,6 +256,8 @@
       </form>
     </div>
   </section>
+
+  </main>
 
   <!-- ===== Footer ===== -->
   <footer class="site-footer">

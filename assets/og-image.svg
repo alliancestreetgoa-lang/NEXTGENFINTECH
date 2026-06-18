@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="NextGen FinTech">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1638"/>
+      <stop offset=".55" stop-color="#14275f"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="oBlue" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e3a8a"/>
+      <stop offset=".55" stop-color="#2f6fd6"/>
+      <stop offset="1" stop-color="#5fd0f7"/>
+    </linearGradient>
+    <linearGradient id="oStone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b95a3"/>
+      <stop offset=".5" stop-color="#3a4350"/>
+      <stop offset="1" stop-color="#222a39"/>
+    </linearGradient>
+    <linearGradient id="oArrow" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#3aa0e8"/>
+      <stop offset="1" stop-color="#7fe0ff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5fd0f7"/>
+      <stop offset="1" stop-color="#a5f3fc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- subtle grid -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <path d="M0 90 H1200 M0 180 H1200 M0 270 H1200 M0 360 H1200 M0 450 H1200 M0 540 H1200"/>
+    <path d="M120 0 V630 M240 0 V630 M360 0 V630 M480 0 V630 M600 0 V630 M720 0 V630 M840 0 V630 M960 0 V630 M1080 0 V630"/>
+  </g>
+  <circle cx="1080" cy="90" r="320" fill="#5fd0f7" fill-opacity="0.10"/>
+
+  <!-- Monogram -->
+  <g transform="translate(110 150) scale(2.0)">
+    <rect x="24" y="30" width="15" height="62" rx="7" fill="url(#oStone)"/>
+    <path d="M31 35 L83 90" fill="none" stroke="url(#oBlue)" stroke-width="15" stroke-linecap="round"/>
+    <rect x="76" y="36" width="15" height="56" rx="7" fill="url(#oBlue)"/>
+    <path d="M83.5 14 L100 40 L67 40 Z" fill="url(#oArrow)"/>
+    <path d="M18 96 Q58 120 102 82" fill="none" stroke="url(#oBlue)" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <!-- Text -->
+  <g font-family="'Poppins','Segoe UI',sans-serif">
+    <text x="400" y="240" font-size="76" font-weight="800" fill="#ffffff">NextGen <tspan fill="#5fd0f7">FinTech</tspan></text>
+    <text x="402" y="300" font-size="34" font-weight="600" fill="#cdd9f5">Financial &amp; Business Advisory</text>
+    <rect x="402" y="332" width="120" height="4" rx="2" fill="url(#accent)"/>
+    <text x="402" y="402" font-size="28" font-weight="500" fill="#aebbe0">Accounting · Tax &amp; GST · Compliance · Funding</text>
+    <text x="402" y="470" font-size="27" font-weight="600" fill="#ffffff">Aniruddha Roy &#8212; CA, ICWA, CS, CFA</text>
+    <text x="402" y="520" font-size="25" font-weight="500" fill="#aebbe0">Margao, South Goa  ·  +91 91120 13981</text>
+  </g>
+</svg>

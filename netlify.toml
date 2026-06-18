@@ -1,0 +1,10 @@
+# Netlify configuration for NextGen FinTech (static site, no build step)
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Security & caching headers are defined in the _headers file.
