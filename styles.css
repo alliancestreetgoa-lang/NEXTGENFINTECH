@@ -115,8 +115,34 @@ img, svg { max-width: 100%; height: auto; display: block; }
   background-size: 46px 46px; mask-image: radial-gradient(circle at 70% 30%, #000, transparent 75%);
 }
 .hero-inner {
-  position: relative; z-index: 1; max-width: 880px;
-  padding: clamp(64px, 11vw, 96px) clamp(18px, 5vw, 24px) clamp(72px, 12vw, 104px);
+  position: relative; z-index: 1; max-width: var(--maxw); margin: 0 auto;
+  padding: clamp(56px, 9vw, 92px) clamp(18px, 5vw, 24px) clamp(64px, 10vw, 96px);
+  display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(32px, 5vw, 64px);
+  align-items: center;
+}
+.hero-copy { min-width: 0; }
+
+/* Hero image */
+.hero-figure {
+  position: relative; margin: 0; justify-self: end;
+  width: 100%; max-width: 460px;
+}
+.hero-img {
+  width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block;
+  border-radius: 22px; box-shadow: 0 30px 60px -24px rgba(0,0,0,.55);
+  border: 1px solid rgba(255,255,255,.14);
+  background: linear-gradient(160deg, #14275f, #2f6fd6);
+}
+.hero-badge {
+  position: absolute; left: -14px; bottom: 22px;
+  display: inline-flex; align-items: center; gap: 9px;
+  background: rgba(255,255,255,.95); color: var(--navy);
+  font-size: .82rem; font-weight: 600; padding: 11px 16px; border-radius: 999px;
+  box-shadow: var(--shadow); backdrop-filter: blur(6px);
+}
+.hero-badge-dot {
+  width: 9px; height: 9px; border-radius: 50%; background: #22c55e;
+  box-shadow: 0 0 0 4px rgba(34,197,94,.25);
 }
 .hero h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); font-weight: 800; letter-spacing: -.02em; }
 .hero h1 span { background: linear-gradient(90deg, var(--sky), #a5f3fc); -webkit-background-clip: text; background-clip: text; color: transparent; }
@@ -263,6 +289,11 @@ img, svg { max-width: 100%; height: auto; display: block; }
   .about-grid { grid-template-columns: 1fr; gap: 36px; }
   .about-media { max-width: 360px; margin: 0 auto; }
   .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  .hero-sub { margin-left: auto; margin-right: auto; }
+  .hero-actions, .hero-stats { justify-content: center; }
+  .hero-figure { justify-self: center; order: -1; max-width: 380px; }
+  .hero-img { aspect-ratio: 16 / 10; }
 }
 
 /* Mobile — hamburger nav + single columns */
