@@ -100,12 +100,20 @@ img, svg { max-width: 100%; height: auto; display: block; }
 .nav-toggle span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: .25s; }
 
 /* ===== Hero ===== */
-.hero { position: relative; color: #fff; overflow: hidden; background: #0b1638; }
-/* Full-bleed background photo */
+.hero {
+  position: relative; color: #fff; overflow: hidden;
+  background: linear-gradient(120deg, #081127 0%, #0f2150 50%, #1e3a8a 100%);
+}
+/* Full-bleed background photo (static fallback for reduced-motion / no-JS) */
 .hero-bg-img {
   position: absolute; inset: 0; z-index: 0;
   width: 100%; height: 100%; object-fit: cover; object-position: center;
   display: block;
+}
+/* Reactive animated network background */
+.hero-canvas {
+  position: absolute; inset: 0; z-index: 0;
+  width: 100%; height: 100%; display: block;
 }
 /* Readability overlay sitting on top of the photo */
 .hero-bg {
